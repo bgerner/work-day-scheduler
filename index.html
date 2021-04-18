@@ -1,38 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 9 AM </span>
+            </div>
+            <input id="9" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 10 AM </span>
+            </div>
+            <input id="10" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 11 AM </span>
+            </div>
+            <input id="11" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 12 PM </span>
+            </div>
+            <input id="12" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 1 PM </span>
+            </div>
+            <input id="1" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 2 PM </span>
+            </div>
+            <input id="2" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 3 PM </span>
+            </div>
+            <input id="3" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 4 PM </span>
+            </div>
+            <input id="4" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> 5 PM </span>
+            </div>
+            <input id="5" type="text" class="form-control" placeholder="Type Here">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/style.js"></script>
+</body>
+
 </html>
